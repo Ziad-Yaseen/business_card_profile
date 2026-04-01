@@ -2,7 +2,6 @@ import 'package:business_card/components/custom_circle_icon.dart';
 import 'package:business_card/components/custom_circle_image.dart';
 import 'package:business_card/components/custom_row.dart';
 import 'package:business_card/components/item.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
