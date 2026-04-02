@@ -1,7 +1,6 @@
-import 'package:business_card/components/custom_circle_icon.dart';
-import 'package:business_card/components/custom_circle_image.dart';
 import 'package:business_card/components/custom_row.dart';
 import 'package:business_card/components/item.dart';
+import 'package:business_card/components/my_profile.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -23,20 +22,7 @@ class Home extends StatelessWidget {
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Stack(
-                children: [
-                  CustomCircleImage(asset: 'assets/images/prof.png'),
-                  Positioned(
-                    bottom: 0,
-                    right: 0,
-                    child: CircleAvatar(
-                      backgroundColor: Color(0xFFf8f6f6),
-                      radius: 20,
-                      child: CustomCircleIcon(icon: Icons.edit_rounded),
-                    ),
-                  ),
-                ],
-              ),
+              MyProfile(image: 'assets/images/prof.png'),
               SizedBox(height: 5),
               Text(
                 'Ziad Yaseen',
