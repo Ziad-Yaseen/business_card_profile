@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomRow extends StatelessWidget {
   const CustomRow({super.key});
@@ -7,7 +8,7 @@ class CustomRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 55,
-      child: const Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -18,7 +19,7 @@ class CustomRow extends StatelessWidget {
                 '42',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 22,
+                  fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -27,8 +28,8 @@ class CustomRow extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xFF64748b),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
+                  fontSize: 12.sp,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
             ],
@@ -45,7 +46,7 @@ class CustomRow extends StatelessWidget {
                 '1.2K',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 22,
+                  fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -54,8 +55,8 @@ class CustomRow extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xFF64748b),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
+                  fontSize: 12.sp,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
             ],
@@ -72,7 +73,7 @@ class CustomRow extends StatelessWidget {
                 '98',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 22,
+                  fontSize: 20.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -81,8 +82,8 @@ class CustomRow extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Color(0xFF64748b),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
+                  fontSize: 12.sp,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
             ],

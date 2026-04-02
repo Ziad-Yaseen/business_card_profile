@@ -1,5 +1,6 @@
 import 'package:business_card/screen/home.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
   runApp(const BusinessCard());
@@ -11,9 +12,11 @@ class BusinessCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Home(),
+    return ScreenUtilInit(
+      designSize: const Size(390, 960),
+      builder: (context, child) =>
+          MaterialApp(debugShowCheckedModeBanner: false, home: child),
+      child: const Home(),
     );
   }
 }

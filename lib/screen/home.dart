@@ -2,6 +2,7 @@ import 'package:business_card/components/custom_row.dart';
 import 'package:business_card/components/item.dart';
 import 'package:business_card/components/my_profile.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -22,50 +23,51 @@ class Home extends StatelessWidget {
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              SizedBox(height: 24.h),
               MyProfile(image: 'assets/images/prof.png'),
-              SizedBox(height: 5),
+              SizedBox(height: 16.h),
               Text(
                 'Ziad Yaseen',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 22,
+                  fontSize: 24.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 5),
+              SizedBox(height: 5.h),
               Text(
                 'Flutter developer',
                 style: TextStyle(
-                  color: Color(0xFFec5b13),
-                  fontSize: 16,
-                  fontWeight: FontWeight.normal,
+                  color: Color(0xFFEC5B13),
+                  fontSize: 16.sp,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
-              SizedBox(height: 5),
+              SizedBox(height: 5.h),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    Icons.location_on_rounded,
+                    Icons.location_on_outlined,
                     color: Color(0xFF64748b),
                     size: 17,
                   ),
-                  SizedBox(width: 5),
+                  SizedBox(width: 5.w),
                   Text(
                     'Luxor, Egypt',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color(0xFF64748b),
-                      fontSize: 14,
-                      fontWeight: FontWeight.normal,
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w400,
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 24.h),
               CustomRow(),
-              SizedBox(height: 25),
+              SizedBox(height: 23.h),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 width: double.infinity,
@@ -75,13 +77,12 @@ class Home extends StatelessWidget {
                   textAlign: TextAlign.right,
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 14,
+                    fontSize: 18.sp,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
-              SizedBox(height: 5),
-              SizedBox(height: 5),
+              SizedBox(height: 16.h),
               Item(
                 mainTxt: 'Phone number',
                 subTxt: '+201080173273',
@@ -103,7 +104,7 @@ class Home extends StatelessWidget {
                 mainColor: Color(0xFFec5b13),
                 accentColor: Color(0xFFffedd5),
                 isThereImage: true,
-                imageAsset: 'assets/images/prof.png',
+                imageAsset: 'assets/images/Background.png',
               ),
             ],
           ),

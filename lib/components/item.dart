@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Item extends StatelessWidget {
   final Color mainColor;
@@ -23,7 +24,7 @@ class Item extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(17),
+      padding: EdgeInsets.all(16.sp),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
@@ -36,7 +37,7 @@ class Item extends StatelessWidget {
           ),
         ],
       ),
-      margin: EdgeInsets.only(top: 5, bottom: 10, left: 20, right: 20),
+      margin: EdgeInsets.only(top: 8.h, bottom: 8.h, left: 24.w, right: 24.w),
       child: Column(
         children: [
           Row(
@@ -48,10 +49,10 @@ class Item extends StatelessWidget {
                   color: accentColor,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                padding: EdgeInsets.all(12),
+                padding: EdgeInsets.all(15),
                 child: Icon(icon, color: mainColor, size: 23),
               ),
-              SizedBox(width: 20),
+              SizedBox(width: 16.w),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,15 +60,17 @@ class Item extends StatelessWidget {
                   Text(
                     mainTxt,
                     style: TextStyle(
+                      fontSize: 12.sp,
                       color: Colors.black.withValues(alpha: 0.5),
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                   Text(
                     subTxt,
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ],
